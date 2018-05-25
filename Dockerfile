@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
 		php7.2-dom \
 		php7.2-sqlite
 RUN apt-get install zip -y
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN apt-get install libxrender1 -y
 RUN apt-get install libfontconfig1 -y
 RUN apt-get install libxtst6 -y
