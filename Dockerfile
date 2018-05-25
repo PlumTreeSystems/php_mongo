@@ -8,6 +8,7 @@ RUN add-apt-repository ppa:ondrej/php
 
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
+		curl \
 		php7.2 \
 		php7.2-gd \
 		php7.2-pdo \
