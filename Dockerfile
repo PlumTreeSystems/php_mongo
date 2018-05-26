@@ -15,7 +15,8 @@ RUN apt-get update && apt-get install -y \
 		php7.2-mysql \
 		php7.2-mongodb \
 		php7.2-dom \
-		php7.2-sqlite
+		php7.2-sqlite \
+		php7.2-mbstring
 RUN apt-get install zip -y
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN apt-get install libxrender1 -y
