@@ -23,5 +23,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt-get install libxrender1 -y
 RUN apt-get install libfontconfig1 -y
 RUN apt-get install libxtst6 -y
-RUN /bin/bash -c 'chmod -R 777 /data/db && ls -l /data'
+RUN mkdir /cache && /bin/bash -c 'chmod -R 777 /cache'
 COPY php.ini /etc/php/7.2/cli
